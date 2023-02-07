@@ -56,19 +56,27 @@ const About = () => {
 					bounce: 0.4,
 				},
 			}}
-			viewport={{ once: true }}
-		>
+			viewport={{ once: true }}>
 			<motion.div
 				className="container about__container"
 				variants={container}
 				initial="hidden"
 				whileInView="show"
-				viewport={{ once: true }}
-			>
-				<motion.div className="about__me" variants={item}>
-					<img src={ME} alt="" className="about__me-image " />
+				viewport={{ once: true }}>
+				<motion.div
+					className="about__me"
+					variants={item}>
+					<img
+						src={ME}
+						alt=""
+						className="about__me-image "
+					/>
 					<div className="arrow_container">
-						<ArrowIcon fill="#ad6daa" stroke="black" className="arrow_icon" />
+						<ArrowIcon
+							fill="#ad6daa"
+							stroke="black"
+							className="arrow_icon"
+						/>
 					</div>
 				</motion.div>
 
@@ -81,19 +89,24 @@ const About = () => {
 						className="about__cards"
 						variants={container}
 						initial="hidden"
-						animate="show"
-					>
-						<motion.article className="about__card" variants={item}>
+						animate="show">
+						<motion.article
+							className="about__card"
+							variants={item}>
 							<FaAward className="about__icon" />
 							<h5>Experience</h5>
-							<small>1 year experience as a freelancer</small>
+							<small>3 year experience as a freelancer</small>
 						</motion.article>
-						<motion.article className="about__card" variants={item}>
+						<motion.article
+							className="about__card"
+							variants={item}>
 							<FiUsers className="about__icon" />
 							<h5>Clients</h5>
 							<small>10+ worldwide on Freelance</small>
 						</motion.article>
-						<motion.article className="about__card" variants={item}>
+						<motion.article
+							className="about__card"
+							variants={item}>
 							<VscFolderLibrary className="about__icon" />
 							<h5>Projects</h5>
 							<small>2 Ongoing 5+ Completed</small>
@@ -105,19 +118,21 @@ const About = () => {
 						initial="hidden"
 						whileInView="show"
 						id="paragraph__div"
-						viewport={{ once: true }}
-					>
+						viewport={{ once: true }}>
 						{letter.map((letter, index) => (
-							<motion.span key={index} variants={itemP}>
+							<motion.span
+								key={index}
+								variants={itemP}>
 								{letter === " " ? "\u00A0" : letter}
 							</motion.span>
 						))}
 					</motion.div>
 
 					<motion.div
-						style={{ width: "27rem", display: "flex", justifyContent: "end" }}
-					>
-						<a href="#contact" className="btn-grad-talk">
+						style={{ width: "27rem", display: "flex", justifyContent: "end" }}>
+						<a
+							href="#contact"
+							className="btn-grad-talk">
 							Let's Talk
 						</a>
 					</motion.div>
