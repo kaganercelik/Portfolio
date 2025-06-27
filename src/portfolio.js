@@ -1,4 +1,4 @@
-/* Change this file to get your personal Porfolio */
+const RESUME_LINK = process.env.REACT_APP_RESUME_LINK || "#";
 
 // Website related settings
 const settings = {
@@ -14,8 +14,7 @@ const greeting = {
   logo_name: "YKagan()",
   full_name: "Yusuf Kağan ERÇELİK",
   subTitle: "Software Engineer 🔥. Always learning.",
-  resumeLink:
-    "https://drive.google.com/file/d/1O9BAq_noBYosPyJUhdMZTGsDw2Yhu8OV/view?usp=sharing",
+  resumeLink: RESUME_LINK,
   mail: "mailto:yusufkaganercelik@gmail.com",
 };
 
