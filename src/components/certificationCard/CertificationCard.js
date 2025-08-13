@@ -20,8 +20,6 @@ function CertificationCard(props) {
       ? linkedInLearningImageSource
       : `${process.env.PUBLIC_URL}/assets/images/${certificate.logo_path}`;
 
-  console.log("image source: ", imageSrc);
-
   return (
     <Fade bottom duration={2000} distance="20px">
       <div className="cert-card" {...styles}>
