@@ -176,6 +176,9 @@ const degrees = {
   ],
 };
 
+const linkedInLearningImageSource =
+  "https://res.cloudinary.com/dua0m7eel/image/upload/v1755089012/linkedin-learning_xijvua.jpg";
+
 const certifications = {
   certifications: [
     {
@@ -511,4 +514,5 @@ export {
   projectsHeader,
   contactPageData,
   projects,
+  linkedInLearningImageSource,
 };

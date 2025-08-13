@@ -2,6 +2,7 @@ import React from "react";
 import "./CertificationCard.css";
 import { Fade } from "react-reveal";
 import { style } from "glamor";
+import { linkedInLearningImageSource } from "../../portfolio";
 
 function CertificationCard(props) {
   const certificate = props.certificate;
@@ -13,6 +14,11 @@ function CertificationCard(props) {
       boxShadow: `0 5px 15px ${certificate.color_code}`,
     },
   });
+
+  const imageSrc =
+    props.subtitle === "LinkedIn Learning"
+      ? linkedInLearningImageSource
+      : `${process.env.PUBLIC_URL}/assets/images/${certificate.logo_path}`;
 
   return (
     <Fade bottom duration={2000} distance="20px">
@@ -30,7 +36,7 @@ function CertificationCard(props) {
             >
               <img
                 className="logo_img"
-                src={`${process.env.PUBLIC_URL}/assets/images/${certificate.logo_path}`}
+                src={imageSrc}
                 alt={certificate.alt_name}
               />
             </div>
