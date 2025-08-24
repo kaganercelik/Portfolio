@@ -200,3 +200,9 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .toggle-cont {
+    margin: auto;
+  }
+}
